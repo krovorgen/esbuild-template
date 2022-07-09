@@ -17,7 +17,7 @@ export const config: BuildOptions = {
   entryPoints: [resolve('src', 'index.jsx')],
   entryNames: '[dir]/bundle.[name]-[hash]',
   metafile: true,
-  bundle: isProduction,
+  bundle: true,
   minify: isProduction,
   loader: { '.png': 'file', '.jpg': 'file', '.svg': 'file' },
   tsconfig: resolve('tsconfig.json'),
